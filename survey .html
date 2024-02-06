@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <<title>Document</title>
+</head>
+<body style="background-color: rgb(194, 234, 204);" >
+  centre <h1>SURVEY FORM<h1> 
+    <form action="submit" method="post" style="width:900px "></form>
+
+  <h1>Let us know how we can improve freeCodeCamp</h1>
+    
+    
+    <!-- <form action="submit" method="post" style="width:900px "> -->
+        <fieldset>
+            
+            <label>Name :</label> <input type="text" name="fname" placeholder="enter your name">
+            <br><br>
+
+            <label>Email :</label> <input type="text" name="mail" placeholder="enter your Mail id">
+            <br><br>
+
+            <label>Age :</label>
+            <select id="age" name="age">
+            <br><br>
+
+
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-45">36-45</option>
+              <option value="46-55">46-55</option>
+              <option value="56+">Age</option>
+              <br><br>
+
+
+            </select>
+            <br><br>
+            <section>
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role">
+              <option value="" disabled selected>Select an option</option>
+              <option value="student">Student</option>
+              <option value="full-time-job">Full Time Job</option>
+              <option value="full-time-learner">Full Time Learner</option>
+              <option value="part-time-job">Part Time Job</option>
+              <option value="part-time-learner">Part Time Learner</option>
+              <option value="other">Other</option>
+            </select>
+            <br><br>
+            </section>
+            <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend? <br>
+            <input type="radio" id="definitely" name="recommend" value="definitely">
+            <label for="definitely">Definitely</label>
+            <br>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label>
+
+            <br>
+            <input type="radio" id="not-sure" name="recommend" value="not-sure">
+            <label for="not-sure">Not Sure</label>
+        </select>
+        <br>
+            <!-- Choice input with checkbox -->
+            <div class="form-group">
+              <label for="choice">Things that should be improved in future(Check all that apply) 
+               
+                  <br>
+               <input type="checkbox" id="front-end" name="choice" value="front-end">
+               <label for="front-end">Front End Projects</label>
+               <br>
+                <input type="checkbox" id="back-end" name="choice" value="back-end">
+                <label for="back-end">Back End Projects</label>
+                <br>
+                <input type="checkbox" id="data-visualization" name="choice" value="data-visualization">
+                <label for="data-visualization">Data Visualization</label>
+                <br><br>
+                
+                <button type="submit" id="submit">Submit</button>
+              </center>
+                
+            </div>
+          </form>
+
+
+
+
+
+

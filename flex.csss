@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>weblayout</title>
+   <style type="text/css">
+     *{
+       margin:0px;
+       padding:0px;
+       box-sizing: border-box;
+       font-family: Arial, sans-serif; Changed to generic sans-serif 
+     }
+     body {
+       margin: 0; Removing default margin 
+       padding: 0;  Removing default padding 
+       background-color: aqua
+     }
+     #Header {
+       width:100%;
+       min-height:50px;
+       background-color: lightgray;
+       text-align: center;
+       line-height: 100px;
+     }
+     #main-div {
+       display: flex;  Flexbox layout for main content and sidebar 
+       flex-wrap: wrap;  Allowing items to wrap 
+       background-color: bisque;
+     }
+     #asidebar-div {
+       flex: 0 0 25%;  Flex item with fixed width 
+       background-color: lightpink;
+       min-height: 400px;
+       text-align: center;
+        }
+     #bodyarea-div 
+       flex: 1; Flex item taking remaining space 
+       min-height: 400px;
+       background-color: lightgreen;
+       display: flex;  Nested flexbox for image-box alignment 

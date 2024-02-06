@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta name="vie   <meta charset="UTF-8">
+wport" content="width=device-width, initial-scale=1.0">
+   <title>weblayout</title>
+   <style type="text/css">
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Changed to generic sans-serif */
+}
+
+body {
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  background-color: aqua;
+}
+
+#Header {
+  width:98%;
+  min-height:40px;
+  background-color:rgb(50, 152, 177);
+  text-align: center;
+  line-height: 70px;
+  margin-bottom: 20px; 
+  margin-top: 20px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+#main-div {
+  display: flex; /* Flexbox layout for main content and sidebar */
+  flex-wrap: wrap; /* Allowing items to wrap */
+  background-color:aqua;
+}
+
+#asidebar-div {
+  flex: 0 0 25%; /* Flex item with fixed width */
+  background-color:lightgreen;
+  min-height: 400px;
+  text-align: center;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+
+#bodyarea-div {
+  flex: 1; /* Flex item taking remaining space */
+  min-height: 400px;
+  background-color:pink;
+  display: flex; /* Nested flexbox for image-box alignment */
+  flex-wrap: wrap;
+  justify-content: space-around; /* Horizontal alignment */
+  align-items: flex-end;
+  margin-top:20px; 
+  margin-bottom:20px;
+  margin-left: 20px;
+  margin-right:20px;
+
+  /* Vertical alignment */
+}
+
+#Article {
+  align-items: center;
+  text-align: start;
+  width: 500px;
+  height: 200px;
+}
+
+.image-box {
+  text-align: center;
+  margin: 12px;
+  background-color:rgb(197, 116, 79);
+  padding: 10px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+  line-height: 150px;
+  width: 240px;
+}
+
+#footer {
+  width: 96%;
+  min-height:55px;
+  background-color: rgb(13, 158, 206);
+  text-align: center;
+  margin-top:20px; 
+  margin-bottom:20px;
+  margin-left: 20px;
+  margin-right:20px;
+
+}
+</style>
+<body>
+   <div id="Header">
+     Header
+   </div>
+   <div id="main-div">
+     <div id="asidebar-div">
+       Aside
+     </div>
+     <div id="bodyarea-div"> 
+    
+       <div class="image-box">Image </div>
+       <div class="image-box">Image </div>
+       <div class="image-box">Image </div>
+     </div>
+   </div>
+   <div id="footer">
+     Footer
+   </div>
+ </body>
+ </html>

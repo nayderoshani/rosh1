@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weblayout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: aqua;
+      margin: 0;
+      padding: 0;
+    }
+
+    #Header {
+      width: 98%;
+      min-height: 40px;
+      background-color: rgb(50, 152, 177);
+      text-align: center;
+      line-height: 40px; /* Adjusted line-height to match the min-height */
+      margin: 20px;
+    }
+
+    #main-div {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: aqua;
+    }
+
+    #asidebar-div {
+      flex: 0 0 25%;
+      background-color: lightgreen;
+      min-height: 400px;
+      text-align: center;
+      margin: 20px;
+    }
+
+    #bodyarea-div {
+      flex: 1;
+      min-height: 400px;
+      background-color: pink;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 20px;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 12px;
+      background-color: rgb(197, 116, 79);
+      padding: 10px;
+      line-height: 150px;
+      width: 240px;
+    }
+
+    #footer {
+      width: 96%;
+      min-height: 55px;
+      background-color: rgb(13, 158, 206);
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="Header">Header</div>
+  <div id="main-div">
+    <div id="asidebar-div">Aside</div>
+    <div id="bodyarea-div"> 
+      <div class="image-box">Image</div>
+      <div class="image-box">Image</div>
+      <div class="image-box">Image</div>
+    </div>
+  </div>
+  <div id="footer">Footer</div>
+</body>
+</html>
+
+        
+           
+
+
+
+
+                  
+
+
+
+
+
+                          
+
+
+
+
+
+
+
+
+

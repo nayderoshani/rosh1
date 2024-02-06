@@ -1,0 +1,27 @@
+margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .home-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            grid-gap: 20px; /* Adjust the gap between grid items */
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #522453;
+            padding: 20px;
+            text-align: center;
+        }
+        .image-box {
+            width: 150px; /* Set the desired width */
+            height: 100px; /* Set the desired height */
+            overflow: hidden; /* Hide overflowing content */
+            border: 1px solid #764a81; /* Border color and thickness */
+            border-radius: 8px; /* Optional: Add rounded corners */
+            box-shadow: 0 4px 8px rgba(35, 194, 219, 0.1); /* Optional: Add a subtle box shadow */
+        }
+        .image-box img {
+            width: 100%; /* Make the image fill the container */
+            height: auto; /* Maintain the image's aspect ratio */
+            display: block; /* Remove extra space below the image */
+        }
